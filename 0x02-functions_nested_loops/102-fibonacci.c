@@ -1,6 +1,6 @@
 /*
  * File: 102-fibonacci.c
- * Auth: Abdessamad El Fathi
+ * Author: Abdessamad El Fathi
  */
 
 #include <stdio.h>
