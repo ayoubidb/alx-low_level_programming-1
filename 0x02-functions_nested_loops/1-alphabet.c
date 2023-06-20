@@ -8,7 +8,7 @@
  * print_alphabet - prints the alphabet, in lowercase, followed by a new line.
  *
  *
- * Return: always 0
+ * Return: void
  */
 void print_alphabet(void)
 {
