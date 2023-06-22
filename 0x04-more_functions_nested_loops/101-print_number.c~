@@ -1,0 +1,39 @@
+/*
+ * File: 101-print_number.c
+ * Author: Abdessamad El Fathi
+ */
+
+#include "main.h"
+
+/**
+ * print_number - a function that prints an integer.
+ * @n: the number to be printed
+ *
+ * Return: void
+ */
+
+void print_number(int n)
+{
+	int i, size;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		n *= -1;
+	}
+
+	for (i = 1000000000; i >= 1; i /= 10)
+	{
+		if (n >= i)
+		{
+			size = i;
+			break;
+		}
+	}
+
+	while (size >= 1)
+	{
+		_putchar((n / size) % 10 + '0');
+		size /= 10;
+	}
+}
