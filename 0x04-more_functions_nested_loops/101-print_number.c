@@ -24,13 +24,13 @@ void print_number(int n)
 		n *= -1;
 	}
 
-	while (num / divisor >= 10)
+	while (n / divisor >= 10)
 		divisor *= 10;
 
 	while (divisor != 0)
 	{
-		_putchar((num / divisor) + '0');
-		num %= divisor;
+		_putchar((n / divisor) + '0');
+		n %= divisor;
 		divisor /= 10;
 	}
 }
