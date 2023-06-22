@@ -14,30 +14,23 @@
 
 void print_number(int n)
 {
-	int i, size;
+	int divisor;
+
+	divisor = 1;
 
 	if (n < 0)
 	{
 		_putchar('-');
 		n *= -1;
 	}
-	if (n == 0)
-		_putchar('0');
-	else
-	{
-		for (i = 1000000000; i >= 1; i /= 10)
-		{
-			if (n >= i)
-			{
-				size = i;
-				break;
-			}
-		}
 
-		while (size >= 1)
-		{
-			_putchar((n / size) % 10 + '0');
-			size /= 10;
-		}
+	while (num / divisor >= 10)
+		divisor *= 10;
+
+	while (divisor != 0)
+	{
+		_putchar((num / divisor) + '0');
+		num %= divisor;
+		divisor /= 10;
 	}
 }
