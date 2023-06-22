@@ -1,0 +1,13 @@
+/*
+ * File: 100-prime_factor.c
+ * Author: Abdessamad el Fathi
+ */
+
+#include <stdio.h>
+
+/**
+ * prime_factor  - a program that finds and prints the largest prime factor of
+ *                 the number 612852475143, followed by a new line.
+ *
+ * Return: Void
+ */
