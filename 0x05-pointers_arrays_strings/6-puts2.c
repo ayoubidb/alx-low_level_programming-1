@@ -15,9 +15,12 @@ void puts2(char *str)
 {
 	int index = 0;
 
-	while ( str[index] && str[index] != '\0')
+	while (str[index])
 	{
 		_putchar(str[index]);
+
+		if (str[index + 1] == '\0')
+			break;
 		index += 2;
 	}
 
