@@ -12,7 +12,7 @@ int main(void)
     char *f;
 
     f = _strchr(s, 'l');
-
+    printf("s = %s\n", s);
     if (f != NULL)
     {
         printf("%s\n", f);
