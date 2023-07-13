@@ -1,0 +1,14 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * _realloc - change the memory space of an array.
+ * @ptr: pointer to old array.
+ * @old_size: the size of ptr
+ * @new_size: new size of array
+ * Return: pointer to the new array.
+ */
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
+{
+	
+}
